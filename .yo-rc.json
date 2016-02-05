@@ -1,0 +1,10 @@
+{
+  "generator-web": {
+    "appName": "carsApp",
+    "includeModernizr": false,
+    "includeUnderscore": false,
+    "includeFontAwesome": true,
+    "includeRespond": true,
+    "includeHtml5shiv": true
+  }
+}
