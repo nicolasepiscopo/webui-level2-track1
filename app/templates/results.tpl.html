@@ -1,0 +1,52 @@
+{{#each flota}}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span>{{modelo}}</span>
+    <span class="label label-primary">{{tipo}}</span>
+    <span class="label label-warning pull-right">
+      <span class="glyphicon glyphicon-star"></span> Valoración:
+      {{valoracion.nombre}} ({{valoracion.valor}}/10)
+    </span>
+  </div>
+  <div class="panel-body">
+    <div class="media">
+      <div class="media-left media-middle">
+        <a href="#">
+          <img class="media-object" src="{{imagen}}">
+        </a>
+      </div>
+      <div class="media-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h4>Precio por 3 días:</h4>
+            <h2 class="text-success">ARS {{precio}}</h2>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="badge">{{plazas}}</span>
+                Plazas
+              </li>
+              <li class="list-group-item">
+                <span class="badge">{{puertas}}</span>
+                Puertas
+              </li>
+              <li class="list-group-item">
+                Capacidad: <span class="pull-right">{{otros}}</span>
+              </li>
+              <li class="list-group-item">
+                <span class="badge">{{#if aireAcondicionado}}Si{{else}}No{{/if}}</span>
+                Aire acondicionado
+              </li>
+              <li class="list-group-item">
+                <span class="badge">{{#if transmisionAutomatica}}Si{{else}}No{{/if}}</span>
+                Transmisión automática
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}

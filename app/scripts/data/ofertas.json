@@ -1,0 +1,24 @@
+{
+  "ofertas" : [
+    {
+      "title" : "COMBO VERANO BUENOS AIRES",
+      "image" : "media/offers/1.jpg",
+      "description" : "20% DE AHORRO Y DEVOLUCIÓN EN MAR DEL PLATA SIN CARGO"
+    },
+    {
+      "title" : "DISFRUTA LOS PAISAJES DE MENDOZA EN AUTO",
+      "image" : "media/offers/2.jpg",
+      "description" : "20% AHORRO PARA ALQUILERES SUPERIORES A 3 DÍAS"
+    },
+    {
+      "title" : "ROMPE TU RUTINA",
+      "image" : "media/offers/3.jpg",
+      "description" : "20% AHORRO EN ALQUILERES SEMANALES EN BUENOS AIRES"
+    },
+    {
+      "title" : "VAMOS A LA PLAYA",
+      "image" : "media/offers/4.jpg",
+      "description" : "ALQUILÁ UN AUTO EN BUENOS AIRES Y DEJALO EN MAR DEL PLATA SIN CARGO DE DEVOLUCION"
+    }
+  ]
+}

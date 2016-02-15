@@ -1,0 +1,64 @@
+{
+  "flota" : [
+    {
+      "modelo" : "Fiat Palio",
+      "tipo" : "Económico",
+      "imagen" : "media/cars/1.jpg",
+      "valoracion" : {
+        "nombre" : "Bueno",
+        "valor" : 6.6
+      },
+      "duenio" : {
+        "nombre" : "Europcar",
+        "lugar" : "Buenos Aires - Centro",
+        "calle" : "821, Avenida Antártida Argentina"
+      },
+      "plazas" : 4,
+      "puertas" : 2,
+      "otros" : "1 Maleta grande 1 Maleta pequeña",
+      "precio" : 2316.62,
+      "aireAcondicionado" : true,
+      "transmisionAutomatica" : false
+    },
+    {
+      "modelo" : "Fiat Palio",
+      "tipo" : "Estandar",
+      "imagen" : "media/cars/1.jpg",
+      "valoracion" : {
+        "nombre" : "Bueno",
+        "valor" : 7.5
+      },
+      "duenio" : {
+        "nombre" : "Europcar",
+        "lugar" : "Buenos Aires - Centro",
+        "calle" : "821, Avenida Antártida Argentina"
+      },
+      "plazas" : 4,
+      "puertas" : 4,
+      "otros" : "1 Maleta grande 1 Maleta pequeña",
+      "precio" : 4930.65,
+      "aireAcondicionado" : true,
+      "transmisionAutomatica" : false
+    },
+    {
+      "modelo" : "Toyota Corolla",
+      "tipo" : "Estándar",
+      "imagen" : "media/cars/2.jpg",
+      "valoracion" : {
+        "nombre" : "Muy Bueno",
+        "valor" : 9
+      },
+      "duenio" : {
+        "nombre" : "Europcar",
+        "lugar" : "Buenos Aires - Centro",
+        "calle" : "821, Avenida Antártida Argentina"
+      },
+      "plazas" : 5,
+      "puertas" : 4,
+      "otros" : "2 Maleta grande 1 Maleta pequeña",
+      "precio" : 9706.34,
+      "aireAcondicionado" : true,
+      "transmisionAutomatica" : true
+    }
+  ]
+}

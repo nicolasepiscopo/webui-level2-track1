@@ -12,6 +12,7 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <!-- build:css(.tmp) styles/main.min.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/autocomplete.css">
         <!-- endbuild -->
 
         <!--[if lt IE 9]>
@@ -29,6 +30,7 @@
         </header>
 
         <div class="container">
+          <div id="messages-holder"></div>
           <div class="row">
             <div class="col-xs-12" id="main-holder">
               <!-- holder for main templates -->
@@ -36,23 +38,36 @@
           </div>
         </div>
 
-        <footer id="footer-holder">
+        <footer id="footer-holder" class="footer">
           <!-- holder for footer template -->
         </footer>
 
-		<!-- build:js(bower_components) scripts/vendor.min.js -->
-        <script src="jquery/dist/jquery.js"></script>
+		    <!-- build:js(bower_components) scripts/vendor.min.js -->
+        <script src="jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-migrate/jquery-migrate.min.js"></script>
+        <script type="text/javascript" src="jquery-autocomplete/jquery.autocomplete.js"></script>
         <script src="bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+        <script src="handlebars/handlebars.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/main.min.js -->
-        <script src="scripts/vendors/jquery-loadTemplate/jquery.loadTemplate-1.5.0.min.js"></script>
         <script src="scripts/vendors/simple-template/simple-template.js"></script>
+        <script src="scripts/vendors/simple-double-bind/simple-double-bind.js"></script>
         <script src="scripts/vendors/simple-routing/simple-routing.js"></script>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/controllers/home.js"></script>
-        <script src="scripts/controllers/flota.js"></script>
-        <script src="scripts/routing.js"></script>
+          <!-- Main app script -->
+          <script src="scripts/main.js"></script>
+          <!-- Services -->
+          <script src="scripts/services/flota.js"></script>
+          <script src="scripts/services/ofertas.js"></script>
+          <!-- Controllers -->
+          <script src="scripts/controllers/home.js"></script>
+          <script src="scripts/controllers/search.js"></script>
+          <script src="scripts/controllers/flota.js"></script>
+          <script src="scripts/controllers/contacto.js"></script>
+          <script src="scripts/controllers/ofertas.js"></script>
+          <script src="scripts/controllers/acerca-de.js"></script>
+          <!-- Routing -->
+          <script src="scripts/routing.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

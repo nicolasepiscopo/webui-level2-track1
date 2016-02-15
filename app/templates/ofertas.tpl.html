@@ -1,0 +1,27 @@
+<section>
+  <ol class="breadcrumb">
+    <li><a href="/#/">Home</a></li>
+    <li class="active">Ofertas</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>Ofertas</h1>
+    <p class="text-danger">No te pierdas nuestras ofertas que fueron especialmente diseñadas para cubrir tus necesidades en tus viajes de placer o negocios.</p>
+  </div>
+
+  <div class="row">
+  {{#each ofertas}}
+    <div class="col-xs-12 col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-body panel-body-large">
+          <a href="/#/contacto"><img class="img-responsive img-thumbnail" src="{{image}}"></a>
+          <hr>
+          <h4>{{title}}</h4>
+          {{description}}
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  </div>
+
+</section>

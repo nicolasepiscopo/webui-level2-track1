@@ -1,7 +1,7 @@
 /*
 Component name: Simple Router
 Author: Nicolás Epíscopo
-Dependencies: none
+Dependencies: simple-double-bind
 */
 ;(function(global, undefined){
   'use strict';

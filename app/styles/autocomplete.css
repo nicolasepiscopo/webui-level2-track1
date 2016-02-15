@@ -1,0 +1,12 @@
+/* Styling for Autocomplete */
+/* CSS Document */
+.ac_results{overflow:hidden;z-index:99999;margin:0;padding:0;}
+.ac_results ul{list-style-position:outside;list-style:none;background:#fff;margin:0; border:1px solid #ccc;}
+.ac_results li{cursor:pointer;display:block;overflow:auto;margin:0;padding:10px;border-top:1px solid #ccc;}
+.ac_results li span.category { padding:5px; display:block; color:#ffffff; background-color:#a0a0a0;}
+.ac_results li:first-child{border:0;}
+.ac_loading{background-image:url(loading.gif);background-position:97% center;background-repeat:no-repeat;}
+.ac_over{background-color:#FFFFFF;color:#000;}
+.ac_over a:hover{color:#ccc}
+.ac_results li a{display:block; overflow:auto; padding: 5px; color:#ccc;}
+.ac_results li img{width:80px; height:auto; max-height:80px;float:left; margin-right:15px;}

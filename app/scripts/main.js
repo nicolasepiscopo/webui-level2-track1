@@ -3,8 +3,10 @@
 
   // App stuff
   global.app = {
+    doubleBind: simpleDoubleBind,
     template: simpleTemplate,
     routing: simpleRouting,
-    controller: []
+    controller: {},
+    service: {}
   };
 })(window);

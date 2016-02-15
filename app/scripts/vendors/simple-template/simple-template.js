@@ -1,7 +1,7 @@
 /*
 Component name: Simple Router
 Author: Nicolás Epíscopo
-Dependencies: jquery-loadTemplate
+Dependencies: handlebars, simple-double-bind
 */
 ;(function(global, undefined){
   'use strict';
@@ -12,19 +12,23 @@ Dependencies: jquery-loadTemplate
     // Public behaviour
     return {
       render: function(holder, templatePath, data){
+
+        var jsonData = {};
+
         if(!data){
-          data = {};
+          jsonData = {};
+        }else{
+          jsonData = data;
         }
-        return new Promise(function(resolve, reject){
-          try{
-            $('#'+holder+"-holder").loadTemplate(templatePath, data);
-            setTimeout(resolve, 100);
-          }catch(e){
-            console.error('It seems that you didn\'t import the loadTemplate jQuery library.');
-            if(reject)
-              reject();
-          }
-        });
+
+        return $.get(templatePath, function (data) {
+          var template=Handlebars.compile(data);
+          $('#'+holder+"-holder").html(template(jsonData));
+          app.doubleBind.initialize();
+        }, 'html');
+      },
+      helper: function(name, callback){
+        Handlebars.registerHelper(name, callback);
       }
     }
   })();

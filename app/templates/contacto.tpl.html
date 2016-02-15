@@ -1,0 +1,38 @@
+<section>
+  <ol class="breadcrumb">
+    <li><a href="/#/">Home</a></li>
+    <li class="active">Contacto</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>Contacto <small>Le responderemos a la brevedad</small></h1>
+  </div>
+
+  <section>
+    <form class="form-vertical" id="contacto" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre y Apellido <span class="text-danger">*</span></label>
+        <input type="text" required name="nombre" id="nombre" data-sdb-model="contacto.nombre" value="" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="email">Email <span class="text-danger">*</span></label>
+        <input type="email" required name="email" id="email" data-sdb-model="contacto.email" value="" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="text" name="telefono" id="telefono" data-sdb-model="contacto.telefono" value="" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="asunto">Asunto <span class="text-danger">*</span></label>
+        <input type="text" required name="asunto" id="asunto" data-sdb-model="contacto.asunto" value="" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje <span class="text-danger">*</span></label>
+        <textarea required name="mensaje" id="mensaje" data-sdb-model="contacto.mensaje" value="" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Enviar" class="btn btn-primary pull-right">
+      </div>
+    </form>
+  </section>
+</section>
